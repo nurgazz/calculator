@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="memory">M1: 0</div>
+            <input type="text" id="result" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <button class="gray" onclick="clearMemory()">MC</button>
+            <button class="gray" onclick="recallMemory()">MR</button>
+            <button class="gray" onclick="subtractMemory()">M-</button>
+            <button class="gray" onclick="addMemory()">M+</button>
+            <button class="gray" onclick="squareRoot()">√</button>
+            <button class="gray" onclick="calculateMarkup()">MU</button>
+           
+ 
+            <button class="gray" onclick="toggleSign()">+/-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="gray" onclick="operate('/')">÷</button>
+            <button class="gray" onclick="calculatePercentage()">%</button>
+          
+          
+            
+            <button class="gray" onclick="backspace()">→</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="gray" onclick="operate('*')">×</button>
+            <button class="gray" onclick="operate('-')">-</button>
+           
+            <button class="red" onclick="clearAll()">AC</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="graylauma" onclick="operate('+')">+</button>
+            <button class="blue" rowspan="2" onclick="calculate()">=</button>
+            
+            <button class="red" onclick="clearEntry()">C</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber('.')">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
